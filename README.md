@@ -50,9 +50,7 @@ A seamless integration of FastAPI with OpenAI's GPT models to create a powerful,
 ## Configuration
 
 1. **Set environment variables**:
-    Create a `.env` file in the root directory with the following content:
-    ```env
-    ```
+    Create a `.env` file in the root directory with the following content, take the `.env.sample` for default:
 
 ## Usage
 
