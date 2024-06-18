@@ -3,6 +3,8 @@ from settings import settings
 from fastapi import FastAPI, Response, status
 from fastapi.middleware.cors import CORSMiddleware
 
+from routers.chatgpt import chatgpt_router
+
 from version import __version__
 
 
@@ -35,3 +37,5 @@ def health_check():
     Check if API is running.
     """
     return Response(status_code=status.HTTP_204_NO_CONTENT)
+
+app.include_router(chatgpt_router)

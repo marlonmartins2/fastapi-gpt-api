@@ -26,4 +26,8 @@ class Settings(BaseSettings):
 
     # GPT Settings
     GPT_API_KEY: str = os.getenv("GPT_API_KEY")
+    GPT_MODEL_ENGINE: str = os.getenv("GPT_MODEL_ENGINE")
+    GPT_MAX_TOKENS: int = int(os.getenv("GPT_MAX_TOKENS"))
+    GPT_TEMPERATURE: float = float(os.getenv("GPT_TEMPERATURE"))
+
 settings = Settings()
